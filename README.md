@@ -1,12 +1,12 @@
 # Portfolio — Frontend Engineer
 
-Portfolio personnel présentant mes projets de développement frontend, construit avec Nuxt 3.
+Portfolio personnel présentant mes projets de développement frontend, construit avec Nuxt 4.
 
 🔗 [Voir le site](https://votre-url.com) *(à mettre à jour une fois déployé)*
 
 ## Stack
 
-- [Nuxt 3](https://nuxt.com)
+- [Nuxt 4](https://nuxt.com)
 - [Nuxt Content](https://content.nuxt.com) — gestion des projets en Markdown
 - [Tailwind CSS](https://tailwindcss.com)
 - Déployé sur [Vercel](Nuxt 3/Nitro a un preset natif optimisé pour Vercel (déploiement zero-config, détection automatique)
