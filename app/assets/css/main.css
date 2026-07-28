@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+    /* Base */
+  --color-background: #FFFFFF;
+  --color-foreground: #16151C;
+
+  
+  /* Brand */
+  --color-primary-foreground: #4F3DC4;
+  --color-secondary-foreground: #C8EFD1;
+  
+  /* Neutral */
+  --color-muted-background: #EE9EEE;
+  --color-muted-foreground: #666666;
+
+  /* UI */
+  --color-border: #E5E0E5;
+  --color-border-strong: #B8B0B8;
+  
+  /* Feedback */
+  --color-success: #16A34A;
+  --color-success-background: #DCFCE7;
+  --color-success-foreground: #166534;
+  
+  --color-warning: #D97706;
+  --color-warning-background: #FEF3C7;
+  --color-warning-foreground: #92400E;
+  
+  --color-danger: #DC2626;
+  --color-danger-background: #FEE2E2;
+  --color-danger-foreground: #991B1B;
+
+
+  /* Fonts */
+    --font-heading: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+}
+
+@utility px-edge {
+    padding-inline: 5%;
+}
