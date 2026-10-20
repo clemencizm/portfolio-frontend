@@ -10,11 +10,11 @@
           <a class="btn" href="https://github.com/clemencizm" target="_blank">Github</a>
         </li>
         <li>
-          <a
+          <NuxtLink
             class="h-10 cursor-pointer items-center justify-center gap-2 border-b-4 border-premium-foreground px-4 py-3 text-base font-medium text-primary-foreground transition-all"
-            href=""
+            to="/resume/CV-ClemenceLemaire-engineer-EN.pdf"
             target="_blank"
-            >Curriculum</a
+            >Curriculum</NuxtLink
           >
         </li>
       </ul>

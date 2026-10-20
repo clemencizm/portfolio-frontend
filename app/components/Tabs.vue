@@ -52,10 +52,10 @@ function onKeydown(e, index) {
         :aria-selected="current === tab.id"
         :aria-controls="`panel-${tab.id}`"
         :tabindex="current === tab.id ? 0 : -1"
-        class="shrink-0 rounded-md px-3 py-1.5 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-foreground"
+        class="shrink-0 px-3 py-1.5 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-foreground transition duration-600 -translate-y-1 hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-accent-base before:absolute before:left-0 before:bottom-0"
         :class="
           current === tab.id
-            ? 'bg-secondary-foreground text-foreground'
+            ? 'text-4xl relative border hover:border'
             : 'text-muted-foreground hover:text-foreground'
         "
         @click="select(tab.id)"

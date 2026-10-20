@@ -50,8 +50,13 @@ const stack = [
 <template>
   <PageContainer>
     <div class="flex flex-col w-full max-w-8/10 gap-10 mx-auto mb-12">
-      <header class="flex flex-row gap-10">
-        <img loading="lazy" alt="Profile image" class="w-20 h-20 bg-accent-background" />
+      <header class="flex flex-row gap-8">
+        <NuxtImg
+          loading="lazy"
+          alt="Profile image"
+          class="w-20 h-20 bg-accent-background rounded-2xl"
+          src="https://parlezvsfr.com/_ipx/q_80/images/picture-profil-clemence.png"
+        />
         <div class="flex flex-col gap-2">
           <h1 v-if="home">{{ home.title }}</h1>
           <p v-if="home">{{ home.heroText }}</p>
@@ -83,7 +88,7 @@ const stack = [
       <div class="flex items-center justify-between">
         <h2 id="stack-heading">Tech Stack</h2>
         <NuxtLink
-          href="/stack"
+          to="/stack"
           class="group/see-all font-medium text-[0.85rem] text-muted-foreground"
         >
           Sell all
