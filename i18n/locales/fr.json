@@ -1,0 +1,33 @@
+{
+  "lang": { "label": "Langue" },
+  "status": {
+    "production": "En production",
+    "development": "En développement",
+    "archived": "Archivé"
+  },
+  "project": {
+    "demo": "Voir la démo",
+    "code": "Voir le code",
+    "video": "Voir la démo vidéo",
+    "noLink": "Projet en cours — pas encore de lien public",
+    "stack": "Stack technique",
+    "role": "Rôle",
+    "timeline": "Chronologie",
+    "challenges": "Défis techniques",
+    "results": "Résultats",
+    "gallery": "Galerie",
+    "problem": "Problème",
+    "solution": "Solution",
+    "range": "de {before} à {after}"
+  },
+  "tabs": {
+    "label": "Sections du projet",
+    "overview": "Aperçu",
+    "timeline": "Chronologie",
+    "challenges": "Défis & résultats",
+    "icebox": "Icebox"
+  },
+  "headings": {
+    "nextSteps": "Prochaines étapes"
+  }
+}
