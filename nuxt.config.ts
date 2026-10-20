@@ -37,16 +37,19 @@ export default defineNuxtConfig({
     ]
   },
   i18n: {
-  defaultLocale: 'fr',
-  strategy: 'prefix_except_default',
-  locales: [
-    { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.json' },
-    { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' }
-  ],
-  detectBrowserLanguage: {
-    useCookie: true,
-    cookieKey: 'i18n_redirected',
-    redirectOn: 'root'
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default',
+    locales: [
+      { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.json' },
+      { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' }
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    }
+  },
+  content: {
+    experimental: { sqliteConnector: 'native' }
   }
-}
 })

@@ -60,7 +60,7 @@ const stack = [
       <ContentRenderer v-if="home" :value="home" />
     </div>
     <section class="flex flex-col mb-16">
-      <h2>{{ home.work }}</h2>
+      <h2 v-if="home">{{ home.work }}</h2>
       <div class="grid grid-cols-3 gap-4">
         <NuxtLink
           v-for="project in projects"
@@ -74,7 +74,7 @@ const stack = [
       </div>
     </section>
     <section class="flex flex-col mb-16">
-      <h2>{{ home.bio }}</h2>
+      <h2 v-if="home">{{ home.bio }}</h2>
       <div class="w-full max-w-8/10 m-auto">
         <Timeline :steps="home.timeline" />
       </div>

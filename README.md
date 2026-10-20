@@ -2,7 +2,7 @@
 
 Portfolio personnel présentant mes projets de développement frontend, construit avec Nuxt 4.
 
-🔗 [Voir le site](https://votre-url.com) _(à mettre à jour une fois déployé)_
+🔗 [Voir le site](https://clemence-lemaire.vercel.app/)
 
 ## Stack
 
@@ -53,7 +53,7 @@ Ce portfolio sert de vitrine technique : chaque fiche projet documente non seule
 
 Bilingual (FR/EN) portfolio of case studies, built with Nuxt 4. Each project page is driven by a Markdown file: frontmatter feeds the components (timeline, challenges, metrics), the body feeds the tabs.
 
-🔗 [Live site](https://your-url.vercel.app)
+🔗 [Live site](https://clemence-lemaire.vercel.app/)
 
 ## Stack
 
