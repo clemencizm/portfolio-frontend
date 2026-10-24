@@ -6,6 +6,7 @@
     "archived": "Archived"
   },
   "project": {
+    "prod": "View the project",
     "demo": "View demo",
     "code": "View code",
     "video": "Watch video demo",

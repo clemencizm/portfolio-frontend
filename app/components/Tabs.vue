@@ -33,11 +33,7 @@ function onKeydown(e, index) {
 
 <template>
   <div>
-    <div
-      role="tablist"
-      :aria-label="label"
-      class="mb-6 flex gap-1 overflow-x-auto border-b border-border pb-3"
-    >
+    <div role="tablist" :aria-label="label" class="mb-6 flex overflow-x-auto border-b">
       <button
         v-for="(tab, i) in tabs"
         :id="`tab-${tab.id}`"
@@ -52,11 +48,11 @@ function onKeydown(e, index) {
         :aria-selected="current === tab.id"
         :aria-controls="`panel-${tab.id}`"
         :tabindex="current === tab.id ? 0 : -1"
-        class="shrink-0 px-3 py-1.5 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-foreground transition duration-600 -translate-y-1 hover:before:scale-x-100 hover:before:origin-left before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-accent-base before:absolute before:left-0 before:bottom-0"
+        class="shrink-0 px-3 py-3 text-sm font-medium transition duration-600 border-b-4 border-b-transparent hover:border-b-4 hover:border-primary-foreground"
         :class="
           current === tab.id
-            ? 'text-4xl relative border hover:border'
-            : 'text-muted-foreground hover:text-foreground'
+            ? 'text-4xl relative border-b-4 border-primary-foreground border'
+            : 'text-foreground '
         "
         @click="select(tab.id)"
         @keydown="onKeydown($event, i)"

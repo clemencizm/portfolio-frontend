@@ -1,13 +1,14 @@
 ---
-title: 'parlezvsfr.com'
+title: 'Parlez-vous français ?'
 slug: 'parlezvsfr'
 tagline: "Media with e-learning modules to Learn French x Today's culture & Day-to-Day Language"
 status: 'In production'
 featured: true
-order: 2
+order: 1
 
-demoUrl: 'https://parlezvsfr.com'
-repoUrl: null
+prodUrl: 'https://parlezvsfr.com'
+demoUrl: null
+repoUrl: 'https://github.com/clemencizm/pvf-webapp'
 videoUrl: null
 
 stack:

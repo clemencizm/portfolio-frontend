@@ -1,13 +1,14 @@
 ---
 title: 'NUI — Vocab App'
-description: 'Short Description '
+description: 'Learn foreign language vocabulary for beginers and intermediate levels A2/B1'
 slug: 'nui'
 tagline: 'Learn foreign language vocabulary for beginers and intermediate levels A2/B1'
 status: 'Demo' # "En production" | "En développement" | "Archivé"
 featured: true
-order: 1
+order: 2
 
 # Liens
+prodUrl: null
 demoUrl: 'https://app-e42da743-93d7-484e-bb49-2ea2b085c21f.cleverapps.io/'
 repoUrl: 'https://github.com/clemencizm/nui'
 videoUrl: null # à ajouter si vous filmez une démo

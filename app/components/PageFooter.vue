@@ -11,9 +11,9 @@
             </h3>
             <ul class="flex gap-2">
               <li>
-                <a href="https://www.linkedin.com/in/clemencizm/" target="_blank">linkedin</a>
+                <a href="https://www.linkedin.com/in/clemencizm/" target="_blank">Linkedin</a>
               </li>
-              <li><a href="" target="_blank">instagram</a></li>
+              <li><a href="https://github.com/clemencizm" target="_blank">Github</a></li>
             </ul>
           </div>
           <div class="flex flex-col gap-4 md:grow-6">

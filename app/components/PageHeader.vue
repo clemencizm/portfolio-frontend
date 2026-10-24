@@ -1,21 +1,30 @@
+<script setup lang="ts">
+const linkClass =
+  'block border-b-1 border-muted-foreground px-4 py-4 font-medium text-muted-foreground  transition-colors duration-300 ease-in-out  hover:border-primary-foreground hover:text-primary-foreground [&.router-link-active]:border-foreground [&.router-link-active]:border-b-4 [&.router-link-active]:text-foreground'
+const route = useRoute()
+</script>
+
 <template>
-  <header class="bg-background/80 sticky top-0 z-40 backdrop-blur-lg">
-    <div class="flex h-22 items-center justify-between gap-2 px-4 py-4 md:px-12">
+  <header class="bg-white/80 sticky top-0 z-40 backdrop-blur-lg">
+    <div class="flex items-center justify-between gap-2 px-12">
       <NuxtLink to="/"
         ><img src="https://parlezvsfr.com/images/logo-clemencizm.svg" class="w-24 h-15" />
       </NuxtLink>
-      <ul class="flex gap-8 font-semibold">
-        <li><a href="#contact">Contact</a></li>
+      <ul class="flex pt-8">
         <li>
-          <a class="btn" href="https://github.com/clemencizm" target="_blank">Github</a>
+          <NuxtLinkLocale :class="linkClass" to="/stack">Stack</NuxtLinkLocale>
         </li>
         <li>
-          <NuxtLink
-            class="h-10 cursor-pointer items-center justify-center gap-2 border-b-4 border-premium-foreground px-4 py-3 text-base font-medium text-primary-foreground transition-all"
-            to="/resume/CV-ClemenceLemaire-engineer-EN.pdf"
+          <a
+            rel="noopener"
+            :class="linkClass"
+            href="/resume/CV-ClemenceLemaire-engineer-EN.pdf"
             target="_blank"
-            >Curriculum</NuxtLink
+            >Curriculum</a
           >
+        </li>
+        <li>
+          <a :class="linkClass" href="#contact">Contact</a>
         </li>
       </ul>
       <div class="flex gap-2">
@@ -24,7 +33,3 @@
     </div>
   </header>
 </template>
-
-<script setup lang="ts">
-const route = useRoute()
-</script>

@@ -18,6 +18,7 @@ const projectSchema = z.object({
   status: z.enum(['production', 'development', 'archived']).optional(),
   featured: z.boolean().optional(),
   order: z.number().optional(),
+  prodUrl: z.string().nullable().optional(),
   demoUrl: z.string().nullable().optional(),
   repoUrl: z.string().nullable().optional(),
   videoUrl: z.string().nullable().optional(),
@@ -51,7 +52,7 @@ const homeSchema = z.object({
   intro: z.string(),
   heroText: z.string().optional(),
   work: z.string(),
-  bio: z.string(),
+  activities: z.string(),
   timeline: timelineSchema.optional()
 })
 
@@ -77,6 +78,12 @@ const resumeSchema = z.object({
   })).optional()
 })
 
+// Adaptez ce schéma au contenu réel de votre resume.md
+const stackSchema = z.object({
+  title: z.string(),
+  intro: z.string()
+  })
+
 const perLocale = (name: string, source: (locale: string) => Source, schema: Schema) =>
   Object.fromEntries(
     locales.map(l => [
@@ -89,6 +96,7 @@ export default defineContentConfig({
   collections: {
     ...perLocale('projects', l => ({ include: `${l}/projects/*.md`, prefix: '/projects' }), projectSchema),
     ...perLocale('home', l => `${l}/pages/home.md`, homeSchema),
-    ...perLocale('resume', l => `${l}/pages/resume.md`, resumeSchema)
+    ...perLocale('resume', l => `${l}/pages/resume.md`, resumeSchema),
+    ...perLocale('stack', l => `${l}/pages/stack.md`, stackSchema)
   }
 })

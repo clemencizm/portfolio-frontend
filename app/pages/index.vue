@@ -54,12 +54,12 @@ const stack = [
         <NuxtImg
           loading="lazy"
           alt="Profile image"
-          class="w-20 h-20 bg-accent-background rounded-2xl"
+          class="w-20 h-20 rounded-2xl object-cover"
           src="https://parlezvsfr.com/_ipx/q_80/images/picture-profil-clemence.png"
         />
         <div class="flex flex-col gap-2">
           <h1 v-if="home">{{ home.title }}</h1>
-          <p v-if="home">{{ home.heroText }}</p>
+          <p v-if="home" class="text-muted-foreground italic">{{ home.intro }}</p>
         </div>
       </header>
       <ContentRenderer v-if="home" :value="home" />
@@ -71,7 +71,7 @@ const stack = [
           v-for="project in projects"
           :key="project.path"
           :to="project.path"
-          class="rounded-md border border-gray-300 px-4 py-6 bg-primary-background hover:bg-primary-background/70 hover:border-primary-foreground transition duration-600"
+          class="rounded-md border text-foreground/70 hover:border-foreground hover:bg-white px-4 hover:text-foreground py-6 border-foreground/30 transition duration-300"
         >
           <h3>{{ project.title }}</h3>
           <p>{{ project.tagline }}</p>
@@ -79,7 +79,7 @@ const stack = [
       </div>
     </section>
     <section class="flex flex-col mb-16">
-      <h2 v-if="home">{{ home.bio }}</h2>
+      <h2 v-if="home">{{ home.activities }}</h2>
       <div class="w-full max-w-8/10 m-auto">
         <Timeline :steps="home.timeline" />
       </div>

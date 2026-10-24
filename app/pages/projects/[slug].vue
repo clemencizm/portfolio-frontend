@@ -54,6 +54,7 @@ const tabs = computed(() => {
       :title="project.title"
       :tagline="project.tagline"
       :status="project.status"
+      :prod-url="project.prodUrl"
       :demo-url="project.demoUrl"
       :repo-url="project.repoUrl"
       :video-url="project.videoUrl"

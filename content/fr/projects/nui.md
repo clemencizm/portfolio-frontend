@@ -1,14 +1,15 @@
 ---
 title: 'NUI — Vocab App'
-description: 'Description courte du projet'
+description: 'Application de mémorisation de vocabulaire de langues étrangères (A2-B1)'
 slug: 'nui'
-tagline: 'Apprendre le vocabulaire allemand pour réussir les examens A2/B1'
+tagline: 'Application de mémorisation de vocabulaire de langues étrangères'
 status: 'En développement' # "En production" | "En développement" | "Archivé"
 featured: true
-order: 1
+order: 2
 
 # Liens
-demoUrl: null # pas encore de démo publique
+prodUrl: null
+demoUrl: 'https://app-e42da743-93d7-484e-bb49-2ea2b085c21f.cleverapps.io/'
 repoUrl: 'https://github.com/clemencizm/nui'
 videoUrl: null # à ajouter si vous filmez une démo
 

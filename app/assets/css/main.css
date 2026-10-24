@@ -10,14 +10,14 @@
     --color-primary-foreground: #273043;
     /* vert : fond active switch */
     --color-secondary-foreground: #C8EFD1;
-    /* red : H1 */
+    /* red */
     --color-accent-background: #FBDBE3;
     --color-accent-base: #E63462;
     --color-accent-foreground: #6E0C25;
 
     /* Neutral */
     --color-muted-background: #F3F1F4;
-    --color-muted-foreground: #9ca3af;
+    --color-muted-foreground: #878790;
 
     /* UI */
     --color-border: #E5E0E5;
@@ -68,7 +68,7 @@
     }
 
     h2 {
-        @apply mb-4 text-xl;
+        @apply mb-4 text-2xl text-muted-foreground;
     }
 
     @media (prefers-reduced-motion: no-preference) {

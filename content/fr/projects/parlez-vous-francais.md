@@ -1,13 +1,14 @@
 ---
-title: 'parlezvsfr.com'
+title: 'Parlez-vous français ?'
 slug: 'parlezvsfr'
-tagline: 'Plateforme e-learning de français en production, avec plus de 840 abonnés actifs'
+tagline: "Plateforme e-learning de français qui met l'accent sur l'actualité culturelle et le quotidien"
 status: 'En production'
 featured: true
-order: 2
+order: 1
 
-demoUrl: 'https://parlezvsfr.com'
-repoUrl: null
+prodUrl: 'https://parlezvsfr.com'
+demoUrl: null
+repoUrl: 'https://github.com/clemencizm/pvf-webapp'
 videoUrl: null
 
 stack:
