@@ -39,6 +39,9 @@ timeline:
   - date: '2026-04-01'
     label: 'Diversification et croissance'
     description: 'Migration podcast vers Acast, recherche de financement.'
+  - date: '2026-10-20'
+    label: 'n˚3 on Google and n˚1 on DuckDuckGo results on the research "Speak French in Berlin"'
+    description: 'n˚16 on Google and n˚5 on DuckDuckGo results on the research "Parlez vous français"'
 
 challenges:
   - problem: 'Architecture multilingue EN/ES dupliquait le code et diluait le SEO, sans répondre au vrai besoin des utilisateurs'
